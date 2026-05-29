@@ -19,8 +19,6 @@ public class LoginTest {
 
     @Test
     public void testLogin() {
-    	System.out.println(driver.getTitle());
-    	System.out.println("Hello");
         Assert.assertTrue(driver.getTitle().contains("Online"));
     }
 

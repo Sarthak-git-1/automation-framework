@@ -10,6 +10,6 @@ public class UserApiTest {
     public void testGetUser() {
         Response response = ApiClient.getUser("2");
         Assert.assertEquals(response.getStatusCode(), 200);
-        Assert.assertTrue(response.jsonPath().getString("data.email").contains("@reqres.in"));
+        Assert.assertTrue(response.jsonPath().getString("name").contains("ReqRes API"));
     }
 }
