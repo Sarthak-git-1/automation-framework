@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="AutomationFrameworkSuite" verbose="1" parallel="false">
+
+    <!-- Run UI Tests -->
+    <test name="UI Tests">
+        <packages>
+            <package name="com.framework.tests.ui"/>
+        </packages>
+    </test>
+
+</suite>

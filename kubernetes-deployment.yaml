@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: automation-framework
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: automation-framework
+  template:
+    metadata:
+      labels:
+        app: automation-framework
+    spec:
+      containers:
+      - name: automation-framework
+        image: your-dockerhub-username/automation-framework:latest
+        ports:
+        - containerPort: 8080
