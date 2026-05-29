@@ -20,7 +20,10 @@ public class LoginTest {
     @Test
     public void testLogin() {
     	System.out.println(driver.getTitle());
+<<<<<<< HEAD
     	System.out.println("Hello");
+=======
+>>>>>>> bd7267f3e4d3ef7767ef9082fc2b5e9a6fa30e76
         Assert.assertTrue(driver.getTitle().contains("Online"));
     }
 
