@@ -17,7 +17,7 @@ public class ApiClient {
 
         return request
                 .when()
-                .get("/users/" + userId)
+                .get()
                 .then()
                 .extract()
                 .response();
